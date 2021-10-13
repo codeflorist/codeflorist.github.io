@@ -13,6 +13,8 @@
   <script>
     Vue.component('vue-video', {
       mounted() {
+        this.$refs.video.muted = true
+        this.$refs.video.volume = 0
         this.$refs.video.play()
       },
       template: '<video preload="auto" ref="video"><source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></video>'
