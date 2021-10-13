@@ -6,8 +6,8 @@
 <body> 
 
   <div id="app">
-    <video preload="auto" ref="video">
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <video preload="auto" autoplay muted loop ref="video">
+      <source src="https://adw-prototype.74.adwerba.at/videos/adw-imagefilm.mp4" type="video/mp4">
     </video>
   </div>
 
@@ -15,11 +15,6 @@
   <script>
     var app = new Vue({
       el: '#app',
-      mounted() {
-        this.$refs.video.muted = true
-        this.$refs.video.volume = 0
-        this.$refs.video.play()
-      }
     })
   </script>
 </html>
