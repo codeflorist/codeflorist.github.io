@@ -17,9 +17,8 @@
     var app = new Vue({
       el: '#app',
       mounted() {
-        alert(window.innerwidth)
-        this.$refs.video.width = window.innerwidth
-        this.$refs.video.height = (window.innerwidth / 720) * 480
+        this.$refs.video.width = window.innerWidth
+        this.$refs.video.height = (window.innerWidth / 720) * 480
         this.$refs.video.addEventListener('canplay', (event) => {
           event.target.play()
         });
