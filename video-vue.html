@@ -6,7 +6,7 @@
 <body> 
 
   <div id="app">
-    <video ref="video">
+    <video ref="video" muted loop>
       <source src="https://adw-prototype.74.adwerba.at/videos/adw-imagefilm.mp4" type="video/mp4">
     </video>
     <p>test bla</p>
@@ -17,7 +17,8 @@
     var app = new Vue({
       el: '#app',
       mounted() {
-        this.$refs.video.muted = true
+        this.$refs.video.width = window.innerwidth
+        this.$refs.video.height = (window.innerwidth / 720) * 480
         this.$refs.video.addEventListener('canplay', (event) => {
           event.target.play()
         });
