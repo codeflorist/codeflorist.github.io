@@ -14,7 +14,10 @@
 </body> 
   <script>
     var app = new Vue({
-      el: '#app'
+      el: '#app',
+      mounted() {
+        this.$refs.video.play()
+      }
     })
   </script>
 </html>
