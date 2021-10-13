@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+<body> 
+
+  <div id="app">
+    <vue-video />
+  </div>
+
+</body> 
+  <script>
+    Vue.component('vue-video', {
+      template: '<video preload="auto">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>'
+    })
+    var app = new Vue({
+      el: '#app'
+    })
+  </script>
+</html>
