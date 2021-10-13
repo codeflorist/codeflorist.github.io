@@ -6,7 +6,7 @@
 <body> 
 
   <div id="app">
-    <video ref="video" src="https://adw-prototype.74.adwerba.at/videos/adw-imagefilm.mp4" />
+    <video ref="video" />
   </div>
 
 </body> 
@@ -16,6 +16,7 @@
       mounted() {
         this.$refs.video.muted = true
         this.$refs.video.preload = 'auto'
+        this.$refs.src = 'https://adw-prototype.74.adwerba.at/videos/adw-imagefilm.mp4'
       }
     })
   </script>
