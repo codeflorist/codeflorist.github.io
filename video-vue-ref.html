@@ -17,6 +17,7 @@
       el: '#app',
       mounted() {
         this.$refs.video.muted = true
+        this.$refs.video.volume = 0
         this.$refs.video.play()
       }
     })
