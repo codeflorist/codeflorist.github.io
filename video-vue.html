@@ -16,7 +16,7 @@
       mounted() {
         this.$refs.video.muted = true
         this.$refs.video.addEventListener('canplay', (event) => {
-          console.log('Video can start, but not sure it will play through.');
+          event.target.play()
         });
       }
     })
